@@ -1,0 +1,39 @@
+# Read more about SSH config files: https://linux.die.net/man/5/ssh_config
+Host TianHe
+    HostName proxy.nscc-gz.cn
+    User sysu_rxwang_1
+    Port 8022
+    
+Host 97
+    HostName 172.18.167.97
+    User defeng
+    Port 22
+    IdentityFile D:\ssh\id_rsa
+    
+Host 15
+    HostName 172.18.167.15
+    User defeng
+    Port 22
+    IdentityFile D:\ssh\id_rsa
+    
+Host 16
+    HostName 172.18.167.16
+    User defeng
+    Port 22
+    IdentityFile D:\ssh\id_rsa
+    
+Host 31
+    HostName 172.18.167.31
+    User defeng
+    Port 22
+    IdentityFile D:\ssh\id_rsa
+	
+Host 33
+    HostName 172.18.167.33
+    User defeng
+    Port 22
+    IdentityFile D:\ssh\id_rsa
+
+
+    
+    
