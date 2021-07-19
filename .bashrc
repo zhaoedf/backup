@@ -138,3 +138,4 @@ if [ ! $(echo $added_keys | grep -o -e id_rsa) ]; then
 	ssh-add "$HOME/.ssh/id_rsa"
 fi
 
+kill $SSH_AGENT_PID
