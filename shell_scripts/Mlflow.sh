@@ -13,6 +13,6 @@ fi
 
 # or nohup in the head.
 #mlflow ui --port 10500 1>_mlflow.log 2>&1 &
-mlflow ui --backend-store-uri sqlite:////data/defeng/mlruns/registry.db --port 10500 --default-artifact-root file:///data/defeng/mlruns/ 1>_mlflow.log 2>&1 &
+mlflow server --backend-store-uri sqlite:////data/defeng/mlruns/mlruns.db --port 10500 --default-artifact-root file:///data/defeng/mlruns/ 1>_mlflow.log 2>&1 &
 echo "Done!"
 #cat token.log | grep --color=always -P "token=([0-9]|[a-zA-Z])*" -o | head -n 1

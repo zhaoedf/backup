@@ -138,4 +138,5 @@ if [ ! $(echo $added_keys | grep -o -e id_rsa) ]; then
 	ssh-add "$HOME/.ssh/id_rsa"
 fi
 
-kill $SSH_AGENT_PID
+#MLFLOW_CONDA_HOME=/data/defeng/anaconda3/envs/IL
+#MLFLOW_TRACKING_URI='sqlite:////data/defeng/mlruns/mlruns.db'

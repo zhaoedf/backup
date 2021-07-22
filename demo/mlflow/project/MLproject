@@ -1,0 +1,15 @@
+name: test_project
+
+
+
+entry_points:
+    main:
+        parameters:
+            data_file: path
+            regularization: {type:float, default:0.1}
+        command: "python train.py -r {regularization} -f {data_file}"
+    validate:
+        parameters:
+            flag: {type:int, default:0.1}
+        command: "python val.py -g {flag}"
+
