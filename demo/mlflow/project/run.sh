@@ -1,6 +1,7 @@
 #!/bin/bash
 
 export MLFLOW_TRACKING_URI='http://localhost:10500'
+export MLFLOW_EXPERIMENT_NAME='test2'
 
 . activate IL
 # Mlflow project path has to be absolute path.
