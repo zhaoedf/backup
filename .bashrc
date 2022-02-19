@@ -131,12 +131,18 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-eval $(ssh-agent)
-added_keys=`ssh-add -l`
- 
-if [ ! $(echo $added_keys | grep -o -e id_rsa) ]; then
-	ssh-add "$HOME/.ssh/id_rsa"
-fi
+# bash ~defeng/kill_proc_by_name.sh ssh-agent
 
+# eval $(ssh-agent)
+#added_keys=`ssh-add -l`
+ 
+#if [ ! $(echo $added_keys | grep -o -e id_rsa) ]; then
+	#ssh-add "$HOME/.ssh/id_rsa"
+#fi
+
+alias myproxy="export all_proxy='socks5://172.18.168.10:10700'"
+alias unproxy="unset all_proxy"
 #MLFLOW_CONDA_HOME=/data/defeng/anaconda3/envs/IL
 #MLFLOW_TRACKING_URI='sqlite:////data/defeng/mlruns/mlruns.db'
+
+# eval "$(oh-my-posh --init --shell bash --config ~/.poshthemes/stelbent.minimal.omp.json)"

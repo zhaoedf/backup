@@ -1,7 +1,8 @@
 #!/bin/bash
 
 PROC_NAME='jupyter-notebook'
-ps -ef | grep $PROC_NAME | grep -v grep
+NAME='defeng'
+ps -ef | grep $PROC_NAME | grep $NAME | grep -v grep
 
 if [ $? -eq 0 ];then
 	echo "Found!  killing..."
