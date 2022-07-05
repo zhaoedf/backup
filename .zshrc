@@ -117,5 +117,5 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 
-alias myproxy="export all_proxy='socks5://172.18.168.10:10700'"
+alias myproxy="export all_proxy='http://172.18.168.10:10700'"
 alias unproxy="unset all_proxy"
