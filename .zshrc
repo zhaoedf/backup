@@ -102,9 +102,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
-# $$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-# conda init zsh
-
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$($USER_PATH'Storage/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
